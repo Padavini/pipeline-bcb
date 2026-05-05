@@ -4,3 +4,15 @@ __pycache__/
 logs/
 .vscode/
 *.pbix
+
+# ambiente virtual
+venv/
+.venv/
+
+# dbt
+target/
+dbt_packages/
+
+# sistema operacional
+Thumbs.db
+.DS_Store
