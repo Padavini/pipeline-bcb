@@ -1,0 +1,31 @@
+models:
+  - name: stg_bcb_series
+    description: "Camada silver com dados padronizados das séries econômicas do Banco Central"
+
+    columns:
+      - name: data_referencia
+        description: "Data de referência do indicador econômico"
+        tests:
+          - not_null
+
+      - name: codigo_serie
+        description: "Código SGS da série no Banco Central"
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 11, 12, 433]
+
+      - name: nome_serie
+        description: "Nome padronizado da série econômica"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['DOLAR', 'SELIC', 'CDI', 'IPCA']
+
+      - name: valor_indicador
+        description: "Valor numérico do indicador econômico"
+
+      - name: data_carga
+        description: "Data e hora em que o registro foi carregado na bronze"
+        tests:
+          - not_null
