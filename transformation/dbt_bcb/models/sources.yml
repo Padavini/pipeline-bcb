@@ -1,0 +1,6 @@
+sources:
+  - name: bronze
+    database: pipeline_bcb
+    schema: dbo
+    tables:
+      - name: bronze_bcb_series
