@@ -170,13 +170,13 @@ Os dados são sincronizados do SQL Server para o Microsoft Fabric Lakehouse via:
 ## Screenshots
 
 ### Airflow — DAG executada com sucesso
-![Airflow DAG](docs/screenshots/airflow_dag.png)
+![Airflow DAG](docs/screenshots/airflow_dag.png.png)
 
 ### Microsoft Fabric — Lakehouse LH_BCB
-![Fabric Lakehouse](docs/screenshots/fabric_lakehouse.png)
+![Fabric Lakehouse](docs/screenshots/fabric_lakehouse.png.png)
 
 ### Power BI — Indicadores BCB (2020–2025)
-![Power BI](docs/screenshots/powerbi_report.png)
+![Power BI](docs/screenshots/powerbi_report.png.png)
 
 ---
 
