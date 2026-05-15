@@ -127,6 +127,8 @@ DB_PASSWORD=sua_senha
 DB_DRIVER=ODBC Driver 17 for SQL Server
 ```
 
+> **Segurança:** o arquivo `.env` está no `.gitignore` e não é versionado. As credenciais nos arquivos `profiles.yml` e `docker-compose.yml` são de ambiente local de desenvolvimento. Em produção, utilize um secrets manager (Azure Key Vault, AWS Secrets Manager ou variáveis de ambiente do Airflow).
+
 ### 2. Criar tabela bronze no SQL Server
 ```sql
 -- database/create_tables.sql
